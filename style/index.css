@@ -1,6 +1,6 @@
 /* Add CSS styling here */
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -21,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -41,14 +41,15 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
-}
+	border-spacing: 0; */
+/* }  */
 
 *{
     box-sizing:border-box;
-    border:1px solid grey;
+    margin:0;
+    padding:0;
     max-width:100%;
-
+    border:1px solid grey;
 }
 
 /* General Styles */
@@ -65,10 +66,67 @@ body{
 }
 
 h1{
+    font-size:6rem;
     font-family:'Great Vibes', cursive;
-    font-size:3rem;
+    
 }
 
 section{
+    padding:4% 0;
 
+}
+
+/* header section styles */
+.top, .bottom{
+    display: flex;
+    justify-content:left;
+}
+
+nav{
+    padding:2% 0;
+    display:flex;
+    justify-content:left;
+
+}
+nav a{
+    display:inline-block;
+    padding:1%;
+    width:10%;
+    text-align:center;
+    border-radius:10px;
+    text-decoration:none;
+    color:black;
+}
+.home{
+    background-color:black;
+    color:white;
+    margin-left:10%;
+}
+.navmain{
+    background-color:white;
+    color: black;
+    margin-left:10%;
+}
+
+/* CTA */
+.cta{
+    display:flex;
+    justify-content:space-around;
+}
+
+h2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.image{
+    width:50%;
+    display:flex;
+}
+.aboutme{
+    width:50%;
+    display:flex;
+    justify-content:right;
+    align-items:center;
 }
