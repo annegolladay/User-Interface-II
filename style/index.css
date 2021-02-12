@@ -49,49 +49,50 @@ table {
     margin:0;
     padding:0;
     max-width:100%;
-    border:1px solid grey;
 }
 
 /* General Styles */
 
-html{
+html {
     font-size:62.5%;
 }
 
-body{
+body {
     font-size:1.6rem;
     line-height:1.5;
     font-family:'Roboto', sans-serif;
-
+    padding: 1em;
 }
 
-h1{
+h1 {
     font-size:6rem;
     font-family:'Great Vibes', cursive;
     
 }
 
-section{
-    padding:4% 0;
+section {
+    padding: 4% 0;
 
 }
 
 /* header section styles */
-.top, .bottom{
+.top, .bottom {
     display: flex;
     justify-content:left;
 }
 
-nav{
-    padding:2% 0;
-    display:flex;
-    justify-content:left;
+nav {
+    padding: 2em 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
 
 }
-nav a{
-    display:inline-block;
-    padding:1%;
+nav a {
+    display: inline-block;
+    padding: 1%;
     width:10%;
+    min-width: 100px;
     text-align:center;
     border-radius:10px;
     text-decoration:none;
@@ -100,17 +101,15 @@ nav a{
 .home{
     background-color:black;
     color:white;
-    margin-left:10%;
 }
 .navmain{
     background-color:white;
     color: black;
-    margin-left:10%;
 }
 
 /* CTA */
 .cta{
-    display:flex;
+    display: flex;
     justify-content:space-around;
 }
 
@@ -124,9 +123,45 @@ h2{
     width:50%;
     display:flex;
 }
+
+/* Gallery */
+
+.gallery-image {
+    height: 10em;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-around;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutme{
     width:50%;
+    padding: 2em;
     display:flex;
-    justify-content:right;
+    flex-direction: column;
+    justify-content: right;
     align-items:center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    height: 25%;
+    min-height: 200px;
+}
+
+.footer-button {
+    width: 150px;
+    height: 75px;
 }
