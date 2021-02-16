@@ -165,3 +165,29 @@ h2{
     width: 150px;
     height: 75px;
 }
+
+/* Media Queries */
+
+/* Tablet */
+/* Any screen 800px or less, these styles apply */
+@media(max-width:800px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .top, .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+/* Mobile First */
+@media(max-width:500px){
+    nav {
+        flex-direction: column;
+        justify-content: ;
+    }
+}
