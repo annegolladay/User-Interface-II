@@ -219,6 +219,9 @@ h2{
         flex-wrap: wrap;
     }
 
+    /* .row1, .row2 {
+        order: ;
+    } */
 }
 
 /* Mobile First */
