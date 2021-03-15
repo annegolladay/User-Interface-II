@@ -144,12 +144,27 @@ button.my-projects {
 .img-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
-/* .img-wrapper .img-container {
-    width: 30em;
-    height: 20vh;
-    padding: 1% 1%; */
+.img-wrapper .img-container {
+    width: 25%;
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-wrapper .img-container .gallery-image {
+    width: 12em;
+    height: 30vh;
 }
 
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-text h3 {
+    display: flex;
+    justify-content: center;
+}
