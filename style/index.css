@@ -62,14 +62,27 @@ body {
     line-height: 1.5;
     font-size: 1.8rem;
     color: #4f4f4f;
+    background-color: #fffafa;
     font-family: 'Roboto', sans-serif;
+    /* padding: 1em; */
 }
+
+section, footer {
+    padding: 4% 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
 h1, h2, h3 {
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 h1 {
     font-size: 5rem;
     font-family:'Great Vibes', cursive;
+    padding-left: 3%;
 }
 h2{
     font-size: 4rem;
@@ -77,17 +90,66 @@ h2{
 h3 {
     font-size: 2.5rem;
 }
-a {
-    text-decoration: none;
-    color: #4f4f4f;
-}
-section {
-    padding: 4% 0;
+.container, footer {
+    padding: 3%;
 }
 
 /* Header Section Style*/
 
-nav {
+.flex-nav {
     display: flex;
     justify-content: flex-start;
+    padding: 0 6%;
 }
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #4f4f4f;
+    padding: 0 2%;
+    text-align: center;
+}
+.home {
+    background-color: black;
+    color: white;
+}
+
+/* Top Container Styles */
+
+.top-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 2%; */
+    width: 100%;
+    padding: 1% 1%;
+}
+.top-container .top-img {
+    /* height: 20vh; */
+    width: 100em;
+}
+.top-container .top-text {
+    padding: 1% 2%;
+    width: 100em;
+}
+button.my-projects {
+    display: flex;
+    justify-content: center;
+    width: 8em;
+    padding: 1% 1%;
+}
+/* button.my-projects a.projects {
+    align-items: center;
+} */
+
+/* Gallery Styles */
+.img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+/* .img-wrapper .img-container {
+    width: 30em;
+    height: 20vh;
+    padding: 1% 1%; */
+}
+
