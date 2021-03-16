@@ -50,7 +50,7 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 /* General Styles */
@@ -100,6 +100,7 @@ h3 {
     display: flex;
     justify-content: flex-start;
     padding: 0 6%;
+    align-items: center;
 }
 a {
     text-decoration: none;
@@ -111,6 +112,9 @@ a {
 .home {
     background-color: black;
     color: white;
+}
+.home, .about, .contact, .projects {
+    border: 1px solid black;
 }
 
 /* Top Container Styles */
@@ -130,15 +134,13 @@ a {
     padding: 1% 2%;
     width: 100em;
 }
-button.my-projects {
+a.my-projects {
     display: flex;
     justify-content: center;
     width: 8em;
     padding: 1% 1%;
+    border: none;
 }
-/* button.my-projects a.projects {
-    align-items: center;
-} */
 
 /* Gallery Styles */
 .img-wrapper {
@@ -159,6 +161,8 @@ button.my-projects {
     height: 30vh;
 }
 
+/* Footer Styles */
+
 .footer-text {
     display: flex;
     flex-direction: column;
@@ -167,4 +171,15 @@ button.my-projects {
 .footer-text h3 {
     display: flex;
     justify-content: center;
+}
+
+/* Work on button */
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 1% 1%;
+    width: 15%;
+    border: 1px solid black;
 }
