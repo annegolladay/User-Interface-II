@@ -1,1 +1,243 @@
 /* Add CSS styling here */
+/* CSS Reset */
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+
+/* General Styles */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: #4f4f4f;
+    background-color: #fffafa;
+    font-family: 'Roboto', sans-serif;
+    /* padding: 1em; */
+}
+
+section, footer {
+    padding: 4% 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    /* letter-spacing: 3px; */
+}
+h1 {
+    font-size: 5rem;
+    font-family:'Great Vibes', cursive;
+    padding-left: 3%;
+}
+h2{
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+.container, footer {
+    padding: 3%;
+}
+
+/* Header Section Style*/
+
+.flex-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 6%;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #4f4f4f;
+    padding: 0 2%;
+    text-align: center;
+}
+.home {
+    background-color: black;
+    color: white;
+}
+.home, .about, .contact, .projects {
+    border: 1px solid black;
+}
+
+/* Top Container Styles */
+
+.top-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 2%; */
+    width: 100%;
+    padding: 1% 1%;
+}
+.top-container .top-img {
+    /* height: 20vh; */
+    width: 100em;
+}
+.top-container .top-text {
+    padding: 1% 2%;
+    width: 100em;
+}
+a.my-projects {
+    display: flex;
+    justify-content: center;
+    width: 8em;
+    padding: 1% 1%;
+    border: none;
+}
+
+/* Gallery Styles */
+.img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.img-wrapper .img-container {
+    width: 25%;
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-wrapper .img-container .gallery-image {
+    width: 12em;
+    height: 30vh;
+}
+
+/* Footer Styles */
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-text h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 1% 1%;
+    width: 15%;
+    border: 1px solid black;
+}
+
+/* Media Queries */
+
+/* min-width- is mobile first, it's for scaling up */
+/* max-width- desktop first- its for scaling down */
+
+/* Tablet */
+@media(max-width:800px) {
+    .top-container .top-img {
+        height: 40vh;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .descript-text-container p {
+        font-size: 1.5rem;
+    }
+    .img-wrapper .img-container .gallery-image {
+        height: 50vh;
+    }
+    .img-container p {
+        font-size: 1.5rem;
+    }
+    .contact-me {
+        width: 20%;
+    }
+    
+}
+/* Phone */
+@media(max-width:500px){
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-nav {
+        flex-direction: column;
+    }
+    .flex-nav a {
+        width: 12rem;
+    }
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-container .top-img img {
+        width: 400px;
+        height: 40vh;
+    }
+    
+    .top-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-wrapper .img-container {
+        width: 50%;
+    }
+}
