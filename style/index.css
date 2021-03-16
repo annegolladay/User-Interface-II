@@ -173,8 +173,6 @@ a.my-projects {
     justify-content: center;
 }
 
-/* Work on button */
-
 .contact-me {
     display: flex;
     justify-content: center;
@@ -182,4 +180,36 @@ a.my-projects {
     padding: 1% 1%;
     width: 15%;
     border: 1px solid black;
+}
+
+/* Media Queries */
+
+/* min-width- is mobile first, it's for scaling up */
+/* max-width- desktop first- its for scaling down */
+
+/* Tablet */
+@media(max-width:800px) {
+    .top-container .top-img {
+        height: 40vh;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .descript-text-container p {
+        font-size: 1.5rem;
+    }
+    .img-wrapper .img-container .gallery-image {
+        height: 50vh;
+    }
+    .img-container p {
+        font-size: 1.5rem;
+    }
+    .contact-me {
+        width: 20%;
+    }
+    
+}
+/* Phone */
+@media(max-width:500px){
+
 }
