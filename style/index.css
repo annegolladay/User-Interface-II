@@ -211,5 +211,33 @@ a.my-projects {
 }
 /* Phone */
 @media(max-width:500px){
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-nav {
+        flex-direction: column;
+    }
+    .flex-nav a {
+        width: 12rem;
+    }
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-container .top-img img {
+        width: 400px;
+        height: 40vh;
+    }
+    
+    .top-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .img-wrapper .img-container {
+        width: 50%;
+    }
 }
